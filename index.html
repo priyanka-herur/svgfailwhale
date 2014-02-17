@@ -1,79 +1,247 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="SVGFailWhale : Animated Fail whale created in SVG" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>SVGFailWhale</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/priyanka-herur/svgfailwhale">View on GitHub</a>
-
-          <h1 id="project_title">SVGFailWhale</h1>
-          <h2 id="project_tagline">Animated Fail whale created in SVG</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/priyanka-herur/svgfailwhale/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/priyanka-herur/svgfailwhale/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">SVGFailWhale maintained by <a href="https://github.com/priyanka-herur">priyanka-herur</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+<head>
+<meta charset="UTF-8">
+<title>SVG Fail Whale</title>
+    <style>
+  
+    .twitterWhale .whale {
+        -webkit-animation-name: whalean;
+        -webkit-animation-duration: 1.5s; 
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+    	-webkit-animation-delay: -1.5s;
+        -webkit-animation-direction: alternate;
+        -webkit-transform-origin: 50%;
     
+        animation-name: whalean;
+        animation-duration: 3s; 
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: -1.5s;
+        animation-direction: alternate;
+        transform-origin: 50%;
+        
+        -moz-animation: none;
+    }
+    
+    @-webkit-keyframes whalean { 
+        0% { -webkit-transform: translateY(8px); }
+        100% { -webkit-transform: translateY(-8px); }
+    }
+    
+    @keyframes whalean { 
+        0% { transform: translateY(8px);  }
+        100% { transform: translateY(-8px); }
+    }
+        
+/*        Animated back wave*/
+    .twitterWhale .waves .backwave {
+        -webkit-animation-name: backwavean;
+        -webkit-animation-duration: 1.5s; 
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-direction: alternate;
+        -webkit-transform-origin: 50%;
+    
+        animation-name: backwavean;
+        animation-duration: 3s; 
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: -1.5s;
+        animation-direction: alternate;
+        transform-origin: 50%;
+        
+        -moz-animation: none;
+    }
 
-  </body>
+    @-webkit-keyframes backwavean { 
+        0% { -webkit-transform: translateX(-20px); }
+        100% { -webkit-transform: translateX(20px); }
+    }
+    
+    @keyframes backwavean { 
+        0% { transform: translateX(-20px);  }
+        100% { transform: translateX(20px); }
+    }
+        
+        
+/*        Front wave going up and down*/
+    .twitterWhale .waves .forewave {
+        -webkit-animation-name: frontwavean;
+        -webkit-animation-duration: 1.5s; 
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+    	-webkit-animation-delay: -1.5s;
+        -webkit-animation-direction: alternate;
+        -webkit-transform-origin: 50%;
+    
+        animation-name: frontwavean;
+        animation-duration: 3s; 
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: -1.5s;
+        animation-direction: alternate;
+        transform-origin: 50%;
+        
+        -moz-animation: none;
+    }
+
+    @-webkit-keyframes frontwavean { 
+        0% { -webkit-transform: translateY(-3px); }
+        100% { -webkit-transform: translateY(3px); }
+    }
+    
+    @keyframes backwavean { 
+        0% { transform: translateY(-3px);  }
+        100% { transform: translateY(3px); }
+    }
+        
+/*        Bird left wing animation*/
+    .twitterWhale .whale .left_wing{
+        -webkit-animation-name: flapleft;
+        -webkit-animation-duration: 0.05s; 
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-direction: alternate;
+        -webkit-transform-origin: 50%;
+    
+        animation-name: flapleft;
+        animation-duration: .1s; 
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: -1.5s;
+        animation-direction: alternate;
+        transform-origin: 50%;
+        
+        -moz-animation: none;
+    }
+    
+    @-webkit-keyframes flapleft { 
+        0% { -webkit-transform:translate(-1px,1px); }
+        100% { -webkit-transform: translate(-3px,5px);  }
+    }
+    
+    @keyframes flapleft { 
+        0% { transform: translate(-1px,1px); }
+        100% { transform: translate(-3px,5px);}
+    }
+        
+        /*        Bird right wing animation*/
+    .twitterWhale .whale .right_wing,
+    .twitterWhale .whale .right_wing_tilted {
+        -webkit-animation-name: flapright;
+        -webkit-animation-duration: 0.05s; 
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-direction: alternate;
+        -webkit-transform-origin: 50%;
+    
+        animation-name: flapright;
+        animation-duration: .1s; 
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: -1.5s;
+        animation-direction: alternate;
+        transform-origin: 50%;
+        
+        -moz-animation: none;
+    }
+    
+    @-webkit-keyframes flapright { 
+        0% { -webkit-transform:translate(3px,1px);}
+        100% { -webkit-transform: translate(0px,5px) ; }
+    }
+    
+    @keyframes flapright { 
+        0% { transform: translate(-1px,1px) rotate(5deg); }
+        100% { transform: translate(-1px,1px) rotate(5deg); }
+    }
+        
+    </style>
+</head>
+<body>
+ <svg class="twitterWhale" viewBox="0 0 822 423" style="background-color:#77cdd3" version="1.1"
+	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"> 
+     
+     <defs>
+     <g id="right_bird">
+				<path d="M 253.0133 54.999 C 253.0133 54.999 253.9963 55.0628 254.5811 54.5659 C 255.5947 53.7051 256.5176 52.7158 257.6094 51.9727 C 262.3232 48.7637 268.5625 50.7441 270.5898 56.0815 C 270.9541 57.0386 273.1123 59.6147 273.1123 59.6147 C 273.1123 59.6147 271.2292 59.4326 270.6667 60 C 268.7458 60.8315 266.2637 63.8208 265.4443 65.7568 C 260.9844 76.2944 249.583 80.7563 239.0273 76.1577 C 233.043 73.5508 228.5557 69.4907 226.2388 63.248 C 225.4316 61.0737 225.3931 58.8447 225.5889 56.5913 C 225.6357 56.0503 226.0942 55.0239 226.0942 55.0239 C 226.0942 55.0239 227.1621 55.3027 227.5757 55.6836 C 229.0347 57.0273 230.8032 57.6724 232.7104 58.0264 C 233.0509 58.0899 233.581 57.9722 233.8845 57.8907 C 233.8845 57.8907 245.0544 62.029 253.0133 54.999 Z" fill="#ed5c26"/>
+				<path id="Ellipse" d="M 263 57 C 263 55.8954 263.8954 55 265 55 C 266.1046 55 267 55.8954 267 57 C 267 58.1046 266.1046 59 265 59 C 263.8954 59 263 58.1046 263 57 Z" fill="#ffffff"/>
+			</g>
+        <g id="left_bird">
+				<path d="M 478.3802 75.4186 C 478.3802 75.4186 477.4011 75.3108 476.9115 74.7199 C 476.0627 73.6962 475.3256 72.5617 474.3795 71.6402 C 470.2944 67.6614 463.806 68.5284 460.8827 73.4326 C 460.3578 74.3119 457.785 76.4742 457.785 76.4742 C 457.785 76.4742 459.6711 76.6218 460.1266 77.2782 C 461.8739 78.4307 463.7993 81.8056 464.2699 83.8545 C 466.8323 95.0064 477.2856 101.3804 488.4795 98.6846 C 494.8257 97.1564 499.9498 93.9373 503.3156 88.1917 C 504.488 86.1906 504.913 84.0022 505.1115 81.749 C 505.1593 81.2081 504.886 80.1177 504.886 80.1177 C 504.886 80.1177 503.7859 80.2068 503.3125 80.5101 C 501.6423 81.58 499.7886 81.9082 497.8489 81.9256 C 497.5026 81.929 497.001 81.7211 496.7163 81.5882 C 496.7163 81.5882 481.9063 86.175 478.3802 75.4186 Z" fill="#ed5c26"/>
+				<path id="Ellipse3" d="M 468.1978 75.6551 C 468.3895 74.5673 467.6632 73.53 466.5754 73.3382 C 465.4877 73.1464 464.4503 73.8727 464.2585 74.9605 C 464.0667 76.0483 464.793 77.0856 465.8809 77.2774 C 466.9686 77.4692 468.006 76.7429 468.1978 75.6551 Z" fill="#ffffff"/>
+			</g>
+
+     </defs>
+     <g class="whale">
+		<path d="M 525.33 311.31 C 522.6368 323.1373 520.4061 332.1997 507.585 338.2314 C 493.1182 345.0361 472.1885 343.6016 460.0244 332.5635 C 441.9658 316.1758 441.8574 296.8574 440 273.9424 C 437.1982 239.3647 406.7427 216.2285 376.8901 204.21 C 366.8799 200.1802 356.6802 196.73 345.9775 194.9897 C 329.6099 192.3452 312.7734 190.3096 296.27 193.0601 C 268.2192 197.7349 248.7393 212.3789 236.52 238.3799 C 230.5098 251.1699 226.8501 264.6602 224.6201 278.5601 C 223.1729 287.5625 239.9668 295.6475 245.9399 299.8203 C 250.9399 302.2598 255.5698 305.3604 260.6201 307.71 C 274.8682 314.3594 289.7666 318.9785 305.1445 322.1289 C 318.4482 324.8545 332.3193 325.1563 345.4829 328.1738 C 334.833 334.9941 312.5586 330.8232 300.71 328.3096 C 278.9502 323.6797 258.8198 314.7695 238.9702 305.1104 C 237.77 304.5303 233.2798 303.2998 233.2798 303.2998 C 233.2798 303.2998 235.6699 307.5 235.8623 308.5527 C 254.2197 327.5205 281.2139 337.5654 305.8203 345.4697 C 339.7676 356.375 374.6782 364.1035 409.8442 369.8652 C 461.5049 378.3281 504.0215 378.1631 531.71 328.0498 C 532.9697 323.6504 535.0596 319.5898 536.7607 315.3584 C 541.2715 304.1367 553.8691 310.9854 561.4697 313.7041 C 585.8564 322.4268 615.0498 314.8662 624.9902 288.7402 C 631.2197 272.3662 627.3574 246.9971 625.4932 238.5981 C 625.4893 244.0664 622.1318 255.417 620.9727 257.1895 C 617.3096 262.7939 610.4863 265.8945 604.0098 266.8379 C 580.0024 270.333 560.4454 256.9092 540.39 276.9 C 540.2246 276.6736 540.0342 276.6176 539.8118 276.7598 C 531.7881 249.1259 508.1012 251.939 488.3503 237.4502 C 483.0508 233.562 478.4514 227.601 477.8365 220.9221 C 477.6414 218.8088 480.0068 207.2054 482.58 202.385 C 476.9641 208.899 461.5416 229.4594 459.3607 246.8843 C 455.8831 274.6761 478.3057 294.9699 503.9559 298.5716 C 511.9139 299.6888 526.1564 299.4796 524.8816 311.4024 L 525.33 311.31 Z" fill="#ffffff"/>
+		<path id="eyes" d="M 366.57 353.625 C 361.9618 353.5247 366.57 353.625 366.57 353.625 ZM 320.7378 297.5664 C 323.2681 299.4639 325.2935 301.0449 327.6182 302.1465 C 332.0469 304.2461 336.6353 304.9727 341.4551 303.7988 C 341.9893 303.6689 342.6772 303.2939 342.9546 304.0723 C 343.1445 304.6064 342.5596 304.9229 342.1816 305.2256 C 335.6572 310.4482 323.1938 306.3643 320.7378 297.5664 Z" fill="#73cdd4"/>
+		<path id="ropes" d="M 398 215 C 398 215 406 143 403 113 M 262 207 C 262 207 253 119.3333 272 59 M 310 193 C 310 193 304.3333 78.6667 331 20 M 341 194 C 341 194 353 85 376 38 M 434 251 C 434 251 463 132.3333 457 77 M 450 323 C 450 323 480.3333 204.3333 485 147 M 485 342 C 485 342 484.3333 211.6667 496 162 C 496 162 515.6667 70.3333 529 44 M 464 336 C 464 336 513 305.6667 524 210 " stroke="#ffffff" stroke-width="1" fill="none"/>
+		<path id="scales" d="M 429 373 C 429 373 446 339 450 320 M 381 365 C 381 365 388.085 358.9216 395.1234 346.6084 C 409.4832 321.4868 429.9736 276.7377 434 249 M 335 354 C 335 354 361.3333 347 381 283 C 387.9374 260.4241 393.7134 235.7329 398.2842 213.2278 M 361 328 C 361 328 375 346.3333 403 332 C 403 332 413 353 442 344 C 442 344 453 365.3333 479 354 C 479 354 485.6666 356.6667 492 353 M 368 315 C 368 315 386.6667 333.6667 410 318 C 410 318 418.3333 340 447 331 C 447 331 457.6667 348.6667 485 342 C 485 342 493.3334 359 505 361 C 505 361 487 368 479 362 C 479 362 457.6667 379 437 357 C 437 357 406.6667 368.3333 395 346 C 395 346 366.3333 358 351 342 C 351 342 363.6667 328.6667 368 315 Z" stroke="#73cdd4" stroke-width="1" fill="none"/>
+         
+<!--         birds-->
+         <g id="newbirds">
+		<g id="bird">
+			 <use xlink:href = "#right_bird"/>
+			 <use x="60" y="-40" xlink:href = "#right_bird"/>
+			 <use x="130" y="54" xlink:href = "#right_bird"/>
+			<g id="right_bird_tilted">
+				<path d="M 510.6915 36.7078 C 510.6915 36.7078 511.6484 36.9414 512.3106 36.5536 C 513.4584 35.8819 514.5389 35.0679 515.7433 34.5256 C 520.9427 32.1839 526.7433 35.2177 527.813 40.8261 C 528.0056 41.8318 529.6836 44.7436 529.6836 44.7436 C 529.6836 44.7436 527.8607 44.2373 527.2083 44.6984 C 525.1721 45.1837 522.2086 47.6965 521.0656 49.4609 C 514.8435 59.0639 502.8406 61.4782 493.2438 55.1165 C 487.803 51.51 484.0889 46.7324 482.8912 40.1822 C 482.474 37.9008 482.8231 35.699 483.4072 33.5138 C 483.5472 32.9891 484.177 32.058 484.177 32.058 C 484.177 32.058 485.1803 32.518 485.5214 32.9649 C 486.7249 34.5415 488.3546 35.4839 490.1714 36.1637 C 490.4957 36.2853 491.0381 36.2615 491.3511 36.2339 C 491.3511 36.2339 501.6328 42.249 510.6915 36.7078 Z" fill="#ed5c26"/>
+				<path id="Ellipse2" d="M 520.179 40.4126 C 520.3708 39.3248 521.4081 38.5985 522.4958 38.7903 C 523.5837 38.9821 524.3101 40.0194 524.1182 41.1072 C 523.9264 42.195 522.8891 42.9213 521.8013 42.7295 C 520.7135 42.5377 519.9872 41.5004 520.179 40.4126 Z" fill="#ffffff"/>
+			</g>
+			 <use xlink:href = "#left_bird"/>
+			 <use x="-82" y="-38" xlink:href = "#left_bird"/>
+			 <use x="26" y="71" xlink:href = "#left_bird"/>
+			 <use x="65" y="134" xlink:href = "#left_bird"/>
+			
+		</g>
+		<g class="wings">
+            <g class="left_wing">
+				<path d="M 496.1908 84.5405 L 495.9761 84.4344 C 495.9761 84.4344 496.0635 83.545 496.4004 83.1586 C 501.0695 77.8075 497.5953 64.5467 497.5953 64.5467 L 497.3069 64.0313 C 497.3069 64.0313 491.1547 66.0989 488.4532 66.9464 C 483.5858 68.474 479.1759 71.6545 478.297 77.4602 C 478.2302 77.9012 478.0985 78.1772 477.9268 78.3235 C 477.9268 78.3235 480.7165 88.7483 496.1908 84.5405 Z" fill="#ed5c26"/>
+				<path d="M 486.5668 82.4535 C 482.8746 81.8426 481.5009 78.6835 483.4554 75.4246 C 485.196 72.5206 487.9819 71.45 491.0907 70.9129 C 492.6407 70.645 494.0977 71.0813 494.0977 71.0813 C 494.0977 71.0813 494.7661 72.4736 494.714 74.0968 C 494.5361 79.6329 491.0612 83.1969 486.5668 82.4535 Z" fill="#ffffff"/>
+			</g>
+			<g class="left_wing">
+				<path d="M 562.1908 218.5405 L 561.9761 218.4344 C 561.9761 218.4344 562.0635 217.545 562.4004 217.1586 C 567.0695 211.8075 563.5953 198.5467 563.5953 198.5467 L 563.3069 198.0313 C 563.3069 198.0313 557.1547 200.0989 554.4532 200.9464 C 549.5858 202.474 545.1759 205.6545 544.297 211.4602 C 544.2302 211.9012 544.0985 212.1772 543.9268 212.3235 C 543.9268 212.3235 546.7164 222.7483 562.1908 218.5405 Z" fill="#ed5c26"/>
+				<path d="M 552.5668 216.4535 C 548.8746 215.8426 547.5009 212.6835 549.4554 209.4246 C 551.196 206.5206 553.9819 205.45 557.0907 204.9129 C 558.6407 204.645 560.0977 205.0813 560.0977 205.0813 C 560.0977 205.0813 560.7661 206.4736 560.714 208.0968 C 560.5361 213.6329 557.0612 217.1969 552.5668 216.4535 Z" fill="#ffffff"/>
+			</g>
+			<g class="left_wing">
+				<path d="M 414.1908 45.5405 L 413.9761 45.4344 C 413.9761 45.4344 414.0635 44.545 414.4004 44.1586 C 419.0695 38.8075 415.5953 25.5467 415.5953 25.5467 L 415.3069 25.0313 C 415.3069 25.0313 409.1547 27.0989 406.4532 27.9464 C 401.5858 29.474 397.1759 32.6545 396.297 38.4602 C 396.2302 38.9012 396.0985 39.1772 395.9268 39.3235 C 395.9268 39.3235 398.7165 49.7483 414.1908 45.5405 Z" fill="#ed5c26"/>
+				<path d="M 404.5668 43.4535 C 400.8746 42.8426 399.5009 39.6835 401.4554 36.4246 C 403.196 33.5206 405.9819 32.45 409.0907 31.9129 C 410.6407 31.645 412.0977 32.0813 412.0977 32.0813 C 412.0977 32.0813 412.7661 33.4736 412.714 35.0968 C 412.5361 40.6329 409.0612 44.1969 404.5668 43.4535 Z" fill="#ffffff"/>
+			</g>
+			<g class="left_wing">
+				<path d="M 522.1908 154.5405 L 521.9761 154.4344 C 521.9761 154.4344 522.0635 153.545 522.4004 153.1586 C 527.0695 147.8075 523.5953 134.5467 523.5953 134.5467 L 523.3069 134.0313 C 523.3069 134.0313 517.1547 136.0989 514.4532 136.9464 C 509.5858 138.474 505.1759 141.6545 504.297 147.4602 C 504.2302 147.9012 504.0985 148.1772 503.9268 148.3235 C 503.9268 148.3235 506.7164 158.7483 522.1908 154.5405 Z" fill="#ed5c26"/>
+				<path d="M 512.5668 152.4535 C 508.8746 151.8426 507.5009 148.6835 509.4554 145.4246 C 511.196 142.5206 513.9819 141.45 517.0907 140.9129 C 518.6407 140.645 520.0977 141.0813 520.0977 141.0813 C 520.0977 141.0813 520.7661 142.4736 520.714 144.0968 C 520.5361 149.6329 517.0612 153.1969 512.5668 152.4535 Z" fill="#ffffff"/>
+			</g>
+			<g class="right_wing">
+				<path d="M 233.8893 60.8894 L 234.1191 60.8223 C 234.1191 60.8223 234.1875 59.9312 233.9229 59.4922 C 230.2539 53.4116 235.978 40.9556 235.978 40.9556 L 236.3516 40.498 C 236.3516 40.498 242.0513 43.6025 244.5645 44.9063 C 249.0928 47.2559 252.8833 51.1538 252.7407 57.0239 C 252.7299 57.4698 252.8117 57.7646 252.9554 57.9384 C 252.9554 57.9384 245.1327 69.4689 233.8893 60.8894 Z" fill="#ed5c26"/>
+				<path d="M 243.7295 60.5054 C 247.4717 60.5449 249.373 57.6724 248.0142 54.1235 C 246.8042 50.9614 244.2466 49.4233 241.2783 48.3545 C 239.7983 47.8215 238.2878 47.9982 238.2878 47.9982 C 238.2878 47.9982 237.3877 49.2532 237.1572 50.8608 C 236.3711 56.3438 239.1743 60.457 243.7295 60.5054 Z" fill="#ffffff"/>
+			</g>
+			<g class="right_wing">
+				<path d="M 293.8893 20.8894 L 294.1191 20.8223 C 294.1191 20.8223 294.1875 19.9312 293.9229 19.4922 C 290.2539 13.4116 295.978 0.9556 295.978 0.9556 L 296.3516 0.498 C 296.3516 0.498 302.0513 3.6025 304.5645 4.9063 C 309.0928 7.2559 312.8833 11.1538 312.7407 17.0239 C 312.7299 17.4698 312.8117 17.7646 312.9554 17.9384 C 312.9554 17.9384 305.1327 29.4689 293.8893 20.8894 Z" fill="#ed5c26"/>
+				<path d="M 303.7295 20.5054 C 307.4717 20.5449 309.373 17.6724 308.0142 14.1235 C 306.8042 10.9614 304.2466 9.4233 301.2783 8.3545 C 299.7983 7.8215 298.2878 7.9982 298.2878 7.9982 C 298.2878 7.9982 297.3877 9.2532 297.1572 10.8608 C 296.3711 16.3438 299.1743 20.457 303.7295 20.5054 Z" fill="#ffffff"/>
+			</g>
+			<g class="right_wing">
+				<path d="M 365.8893 113.8894 L 366.1191 113.8223 C 366.1191 113.8223 366.1875 112.9312 365.9229 112.4922 C 362.2539 106.4116 367.978 93.9556 367.978 93.9556 L 368.3516 93.498 C 368.3516 93.498 374.0513 96.6025 376.5645 97.9063 C 381.0928 100.2559 384.8833 104.1538 384.7407 110.0239 C 384.7299 110.4698 384.8117 110.7646 384.9554 110.9384 C 384.9554 110.9384 377.1327 122.4689 365.8893 113.8894 Z" fill="#ed5c26"/>
+				<path d="M 375.7295 113.5054 C 379.4717 113.5449 381.373 110.6724 380.0142 107.1235 C 378.8042 103.9614 376.2466 102.4233 373.2783 101.3545 C 371.7983 100.8215 370.2878 100.9982 370.2878 100.9982 C 370.2878 100.9982 369.3877 102.2532 369.1572 103.8608 C 368.3711 109.3438 371.1743 113.457 375.7295 113.5054 Z" fill="#ffffff"/>
+			</g>
+			<g class="right_wing_tilted">
+				<path d="M 490.8352 39.1879 L 491.0731 39.1617 C 491.0731 39.1617 491.2952 38.296 491.1108 37.8178 C 488.5535 31.1925 496.3536 19.9196 496.3536 19.9196 L 496.8009 19.5339 C 496.8009 19.5339 501.875 23.581 504.1235 25.3013 C 508.175 28.4016 511.2312 32.8985 510.0714 38.6547 C 509.9833 39.0919 510.0127 39.3964 510.1241 39.5925 C 510.1241 39.5925 500.418 49.5895 490.8352 39.1879 Z" fill="#ed5c26"/>
+				<path d="M 500.5925 40.5185 C 504.271 41.2072 506.6423 38.7085 505.9203 34.9776 C 505.2778 31.6534 503.0261 29.6946 500.2886 28.1265 C 498.9236 27.3447 497.4053 27.2563 497.4053 27.2563 C 497.4053 27.2563 496.301 28.336 495.7949 29.8792 C 494.0686 35.1423 496.115 39.6798 500.5925 40.5185 Z" fill="#ffffff"/>
+			</g>
+			<g class="left_wing">
+				<path d="M 496.1908 84.5405 L 495.9761 84.4344 C 495.9761 84.4344 496.0635 83.545 496.4004 83.1586 C 501.0695 77.8075 497.5953 64.5467 497.5953 64.5467 L 497.3069 64.0313 C 497.3069 64.0313 491.1547 66.0989 488.4532 66.9464 C 483.5858 68.474 479.1759 71.6545 478.297 77.4602 C 478.2302 77.9012 478.0985 78.1772 477.9268 78.3235 C 477.9268 78.3235 480.7165 88.7483 496.1908 84.5405 Z" fill="#ed5c26"/>
+				<path d="M 486.5668 82.4535 C 482.8746 81.8426 481.5009 78.6835 483.4554 75.4246 C 485.196 72.5206 487.9819 71.45 491.0907 70.9129 C 492.6407 70.645 494.0977 71.0813 494.0977 71.0813 C 494.0977 71.0813 494.7661 72.4736 494.714 74.0968 C 494.5361 79.6329 491.0612 83.1969 486.5668 82.4535 Z" fill="#ffffff"/>
+			</g>
+		</g>
+	</g>
+	</g>
+	<g class="waves">
+		<path class="backwave" d="M 1 462 L 821.63 462 L 821.63 412 C 808.1614 412 796.4719 405.1522 790.62 395.115 L 790.63 394 L 790.315 394.58 L 790 394 L 790.01 395.115 C 784.1581 405.1524 772.4688 412 759 412 C 745.1462 412 733.1725 404.7539 727.5 394.245 C 721.8275 404.7539 709.8538 412 696 412 C 682.1462 412 670.1725 404.7539 664.5 394.245 C 658.8275 404.7539 646.8538 412 633 412 C 619.1462 412 607.1725 404.7539 601.5 394.245 C 595.8275 404.7539 583.8538 412 570 412 C 556.0375 412 543.9871 404.6426 538.37 394 L 537.63 394 C 532.0129 404.6426 519.9625 412 506 412 C 492.1462 412 480.1725 404.7539 474.5 394.245 C 468.8275 404.7539 456.8538 412 443 412 C 429.1462 412 417.1725 404.7539 411.5 394.245 C 405.8275 404.7539 393.8539 412 380 412 C 366.1461 412 354.1725 404.7539 348.5 394.245 C 342.8275 404.7539 330.8539 412 317 412 C 303.1461 412 291.1725 404.7539 285.5 394.245 C 279.8275 404.7539 267.8539 412 254 412 C 240.1461 412 228.1725 404.7539 222.5 394.245 C 216.8275 404.7539 204.8539 412 191 412 C 177.0375 412 164.9871 404.6426 159.37 394 L 158.63 394 C 153.0129 404.6426 140.9625 412 127 412 C 113.1462 412 101.1725 404.7539 95.5 394.245 C 89.8275 404.7539 77.8538 412 64 412 C 50.1462 412 38.1725 404.7539 32.5 394.245 C 26.8275 404.7539 14.8539 412 1 412 L 1 462 Z" fill="#ffffff"/>
+		<path class="forewave" d="M 0 463 L 822 463 L 821.63 395 C 816.0128 405.6423 803.9622 413 790 413 C 776.1462 413 764.1725 405.7539 758.5 395.245 C 752.8275 405.7539 740.8538 413 727 413 C 713.1462 413 701.1725 405.7539 695.5 395.245 C 689.8275 405.7539 677.8538 413 664 413 C 650.1462 413 638.1725 405.7539 632.5 395.245 C 626.8275 405.7539 614.8538 413 601 413 C 587.0375 413 574.9871 405.6426 569.37 395 L 568.63 395 C 563.0129 405.6426 550.9625 413 537 413 C 523.1462 413 511.1725 405.7539 505.5 395.245 C 499.8275 405.7539 487.8538 413 474 413 C 460.1462 413 448.1725 405.7539 442.5 395.245 C 436.8275 405.7539 424.8539 413 411 413 C 397.1461 413 385.1725 405.7539 379.5 395.245 C 373.8275 405.7539 361.8539 413 348 413 C 334.1461 413 322.1725 405.7539 316.5 395.245 C 310.8275 405.7539 298.8539 413 285 413 C 271.1461 413 259.1725 405.7539 253.5 395.245 C 247.8275 405.7539 235.8539 413 222 413 C 208.0375 413 195.9871 405.6426 190.37 395 L 189.63 395 C 184.0129 405.6426 171.9625 413 158 413 C 144.1462 413 132.1725 405.7539 126.5 395.245 C 120.8275 405.7539 108.8538 413 95 413 C 81.1462 413 69.1725 405.7539 63.5 395.245 C 57.8275 405.7539 45.8538 413 32 413 C 18.0378 413 5.9872 405.6423 0.37 395 L 0 463 Z" fill="#ed5c26"/>
+	</g>
+     
+    </svg>
+</body>
 </html>
